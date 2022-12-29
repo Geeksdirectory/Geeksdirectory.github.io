@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GeeksDirectory</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Mon, 19 Sep 2022 15:08:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Cohen Sutherland Line Clipping Computer Graphics program</title>
+		<link>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/</link>
+					<comments>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/#respond</comments>
+		
+		<dc:creator><![CDATA[AI_11_Ajink. Gupta]]></dc:creator>
+		<pubDate>Mon, 19 Sep 2022 04:58:04 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<category><![CDATA[computer Graphics]]></category>
+		<guid isPermaLink="false">/?p=1721</guid>
+
+					<description><![CDATA[Cohen Sutherland Line Clipping Computer Graphics program     #include&#60;stdio.h&#62;     #include&#60;conio.h&#62;     #include&#60;stdlib.h&#62;     #include&#60;dos.h&#62;     #include&#60;math.h&#62;     #include&#60;graphics.h&#62;     /* Defining structure for end point of line */     typedef struct coordinate     {     int x,y;     char code[4];     }PT;     void drawwindow();     void drawline (PT p1,PT p2,int cl);     PT setcode(PT p);     int visibility (PT p1,PT p2);     PT resetendpt (PT p1,PT p2);     main()     {     int gd=DETECT, gm,v;     PT p1,p2,ptemp;     initgraph(&#38;gd,&#38;gm,&#8221;\tc\bgi&#8221;);     cleardevice();     printf(&#8220;nnttENTER END-POINT 1 (x,y): &#8220;);     scanf(&#8220;%d,%d&#8221;,&#38;p1.x,&#38;p1.y);     printf(&#8220;nnttENTER END-POINT 2 (x,y): &#8220;);     scanf(&#8220;%d,%d&#8221;,&#38;p2.x,&#38;p2.y);…]]></description>
+										<content:encoded><![CDATA[<p><strong> Cohen Sutherland Line Clipping Computer Graphics program</strong></p>
+<blockquote>
+<p>    #include&lt;stdio.h&gt;</p>
+<p>    #include&lt;conio.h&gt;</p>
+<p>    #include&lt;stdlib.h&gt;</p>
+<p>    #include&lt;dos.h&gt;</p>
+<p>    #include&lt;math.h&gt;</p>
+<p>    #include&lt;graphics.h&gt;</p>
+<p>    /* Defining structure for end point of line */</p>
+<p>    typedef struct coordinate</p>
+<p>    {</p>
+<p>    int x,y;</p>
+<p>    char code[4];</p>
+<p>    }PT;</p>
+<p>    void drawwindow();</p>
+<p>    void drawline (PT p1,PT p2,int cl);</p>
+<p>    PT setcode(PT p);</p>
+<p>    int visibility (PT p1,PT p2);</p>
+<p>    PT resetendpt (PT p1,PT p2);</p>
+<p>    main()</p>
+<p>    {</p>
+<p>    int gd=DETECT, gm,v;</p>
+<p>    PT p1,p2,ptemp;</p>
+<p>    initgraph(&amp;gd,&amp;gm,&#8221;\tc\bgi&#8221;);</p>
+<p>    cleardevice();</p>
+<p>    printf(&#8220;nnttENTER END-POINT 1 (x,y): &#8220;);</p>
+<p>    scanf(&#8220;%d,%d&#8221;,&amp;p1.x,&amp;p1.y);</p>
+<p>    printf(&#8220;nnttENTER END-POINT 2 (x,y): &#8220;);</p>
+<p>    scanf(&#8220;%d,%d&#8221;,&amp;p2.x,&amp;p2.y);</p>
+<p>    cleardevice();</p>
+<p>    drawwindow();</p>
+<p>    getch();</p>
+<p>    drawline(p1,p2,15);</p>
+<p>    getch();</p>
+<p>    p1=setcode(p1);</p>
+<p>    p2=setcode(p2);</p>
+<p>    v=visibility(p1,p2);</p>
+<p>    switch(v)</p>
+<p>        {</p>
+<p>        case 0:    cleardevice(); /* Line completely visible*/</p>
+<p>                drawwindow();</p>
+<p>                drawline(p1,p2,15);</p>
+<p>                break;</p>
+<p>        case 1:    cleardevice(); /* Line completely invisible */</p>
+<p>                drawwindow();</p>
+<p>                break;</p>
+<p>        case 2:    cleardevice();     /* line partly visible */</p>
+<p>                p1=resetendpt (p1,p2);</p>
+<p>                p2=resetendpt(p2,p1);</p>
+<p>                drawwindow();</p>
+<p>                drawline(p1,p2,15);</p>
+<p>                break;</p>
+<p>        }</p>
+<p>    getch();</p>
+<p>    closegraph();</p>
+<p>    return(0);</p>
+<p>    }</p>
+<p>    /* Function to draw window */</p>
+<p>    void drawwindow()</p>
+<p>    {</p>
+<p>    setcolor(RED);</p>
+<p>    line(150,100,450,100);</p>
+<p>    line(450,100,450,350);</p>
+<p>    line(450,350,150,350);</p>
+<p>    line(150,350,150,100);</p>
+<p>    }</p>
+<p>    /* Function to draw line between two points</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;*/</p>
+<p>    void drawline (PT p1,PT p2,int cl)</p>
+<p>    {</p>
+<p>    setcolor(cl);</p>
+<p>    line(p1.x,p1.y,p2.x,p2.y);</p>
+<p>    }</p>
+<p>    /* Function to set code of the co-ordinates</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    PT setcode(PT p)</p>
+<p>    {</p>
+<p>    PT ptemp;</p>
+<p>    if(p.y&lt;100)</p>
+<p>    ptemp.code[0]=&#8217;1&#8242;; /* TOP */</p>
+<p>    else</p>
+<p>    ptemp.code[0]=&#8217;0&#8242;;</p>
+<p>    if(p.y&gt;350)</p>
+<p>    ptemp.code[1]=&#8217;1&#8242;; /* BOTTOM */</p>
+<p>    else</p>
+<p>    ptemp.code[1]=&#8217;0&#8242;;</p>
+<p>    if (p.x&gt;450)</p>
+<p>    ptemp.code[2]=&#8217;1&#8242;; /* RIGHT */</p>
+<p>    else</p>
+<p>    ptemp.code[2]=&#8217;0&#8242;;</p>
+<p>    if (p.x&lt;150) /* LEFT */</p>
+<p>    ptemp.code[3]=&#8217;1&#8242;;</p>
+<p>    else</p>
+<p>Cohen Sutherland Line Clipping Computer Graphics program</p>
+<p> </p>
+<p>    ptemp.code[3]=&#8217;0&#8242;;</p>
+<p>    ptemp.x=p.x;</p>
+<p>    ptemp.y=p.y;</p>
+<p>    return(ptemp);</p>
+<p>    }</p>
+<p>    /* Function to determine visibility of line</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    int visibility (PT p1,PT p2)</p>
+<p>    {</p>
+<p>    int i,flag=0;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    {</p>
+<p>    if((p1.code[i]!=&#8217;0&#8242;)||(p2.code[i]!=&#8217;0&#8242;))</p>
+<p>    flag=1;</p>
+<p>    }</p>
+<p>    if(flag==0)</p>
+<p>    return(0);</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    {</p>
+<p>    if((p1.code[i]==p2.code[i]) &amp;&amp;(p1.code[i]==&#8217;1&#8242;))</p>
+<p>    flag=0;</p>
+<p>    }</p>
+<p>    if(flag==0)</p>
+<p>    return(1);</p>
+<p>    return(2);</p>
+<p>    }</p>
+<p>    /* Function to find new end points</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    PT resetendpt (PT p1,PT p2)</p>
+<p>    {</p>
+<p>    PT temp;</p>
+<p>    int x,y,i;</p>
+<p>    float m,k;</p>
+<p>    if( p1.code[3]==&#8217;1&#8242;) /* Cutting LEFT Edge  */</p>
+<p>    x=150;</p>
+<p>    if(p1.code[2]==&#8217;1&#8242;)  /* Cutting RIGHT Edge */</p>
+<p>    x=450;</p>
+<p>    if((p1.code[3]==&#8217;1&#8242;)||(p1.code[2]==&#8217;1&#8242;))</p>
+<p>    {</p>
+<p>    m=(float) (p2.y-p1.y)/(p2.x-p1.x);</p>
+<p>    k=(p1.y+(m*(x-p1.x)));</p>
+<p>    temp.y=k;</p>
+<p>    temp.x=x;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    temp.code[i]=p1.code[i];</p>
+<p>    if(temp.y&lt;=350&amp;&amp;temp.y&gt;=100)</p>
+<p>    return(temp);</p>
+<p>    }</p>
+<p>    if(p1.code[0]==&#8217;1&#8242;)  /* Cutting TOP Edge */</p>
+<p>    y=100;</p>
+<p>    if(p1.code [1]==&#8217;1&#8242;) /* Cutting BOTTOM Edge */</p>
+<p>    y=350;</p>
+<p>    if((p1.code[0]==&#8217;1&#8242;)||(p1.code[1]==&#8217;1&#8242;))</p>
+<p>    {</p>
+<p>    m=(float)(p2.y-p1.y)/(p2.x-p1.x);</p>
+<p>    k=(float)p1.x+(float)(y-p1.y)/m;</p>
+<p>    temp.x=k;</p>
+<p>    temp.y=y;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    temp.code[i]=p1.code[i];</p>
+<p>    return(temp);</p>
+<p>    }</p>
+<p>    else</p>
+<p>    return(p1);</p>
+<p>    }</p>
+</p>
+</blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EasySploit:- MetaSploit Automation Tool (automated payload creater)</title>
+		<link>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/</link>
+					<comments>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/#respond</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Thu, 15 Sep 2022 09:15:38 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<guid isPermaLink="false">/?p=1688</guid>
+
+					<description><![CDATA[EasySploit is a tool which allows the user to run MetaSploit (payload builder )in an automated environment. MetaSploit is a well known penetration platform which allows the user to write, test and execute exploit code. It contains a wide range of tools which the user can use to detect security vulnerabilities, enumerate networks, execute attacks and avoid detection.Disclaimer: For education purposes only! Usage of EasySploit for attacking targets without prior mutual consent is illegal. EasySploit: Fast &#38; Easy to UseMetaSploit Automation Tool EasySploit allows the user to exploit a wide range of platforms including Windows, Android, Linux, MacOS and web…]]></description>
+										<content:encoded><![CDATA[
+<p>EasySploit is a tool which allows the user to run <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>(payload builder )in an automated environment. <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>is a well known penetration platform which allows the user to write, test and execute exploit code. It contains a wide range of tools which the user can use to detect security vulnerabilities, enumerate networks, execute attacks and avoid detection.Disclaimer: For education purposes only! Usage of EasySploit for attacking targets without prior mutual consent is illegal.</p>
+
+
+
+<h2><strong>EasySploit: Fast &amp; Easy to UseMetaSploit Automation Tool</strong></h2>
+
+
+
+<p>EasySploit allows the user to exploit a wide range of platforms including Windows, Android, Linux, MacOS and web servers. EasySploit will first ask the user to enter the target’s IP address to check if the target is vulnerable to attacks through EasySploit. If the target is vulnerable, the user will receive the corresponding operating system and attack method. Once the target has been breached, meterpreter will automatically start allowing the user to select his desired action.</p>
+
+
+
+<h3><strong>Features:</strong></h3>
+
+
+
+<ul><li>Run <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>through an automated tool</li><li>Attack systems using different operating systems</li><li>Download files from the target system</li><li>Monitor keystrokes of the target system</li></ul>
+
+
+
+<h3><strong>Supported Platforms:</strong></h3>
+
+
+
+<ul><li>Linux</li></ul>
+
+
+
+<h3><strong>Requirements:</strong></h3>
+
+
+
+<ul><li>Git</li></ul>
+
+
+
+<h2><strong>Install EasySploit</strong></h2>
+
+
+
+<p>Clone the GitHub repository:</p>
+
+
+
+<p>$ git clone https://github.com/KALILINUXTRICKSYT/easysploit.git</p>
+
+
+
+<p>Navigate to the working directory and install the requirements:</p>
+
+
+
+<p>$ cd easysploit</p>
+
+
+
+<p>$ bash installer.sh</p>
+
+
+
+<h2><strong>EasySploit Usage</strong></h2>
+
+
+
+<p>Enter the following commands:</p>
+
+
+
+<p>Enter the following commands:</p>
+
+
+
+<p>$ cd easysploit</p>
+
+
+
+<p>$ easysploit</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;______ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _____ &nbsp; &nbsp; &nbsp; __&nbsp; &nbsp; &nbsp; _ __&nbsp;</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;/ ____/___ ________&nbsp; __/ ___/____&nbsp; / /___&nbsp; (_) /_</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;/ __/ / __ `/ ___/ / / /\__ \/ __ \/ / __ \/ / __/</p>
+
+
+
+<p>&nbsp;&nbsp;/ /___/ /_/ (__&nbsp; ) /_/ /___/ / /_/ / / /_/ / / /_ &nbsp; v4.2</p>
+
+
+
+<p>&nbsp;/_____/\__,_/____/\__, //____/ .___/_/\____/_/\__/&nbsp; (Linux)</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/____/ &nbsp; &nbsp; /_/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<p>Usage of EASYSPLOIT for attacking targets without prior mutual consent is</p>
+
+
+
+<p>ILLEGAL. Developers are not responsible for any damage caused by this script.</p>
+
+
+
+<p>EASYSPLOIT is intented ONLY FOR EDUCATIONAL PURPOSES!!! STAY LEGAL!!!</p>
+
+
+
+<p>(1) Windows &#8211;&gt; test.exe (payload and listener)&nbsp;</p>
+
+
+
+<p>(2) Android &#8211;&gt; test.apk (payload and listener)&nbsp;&nbsp;</p>
+
+
+
+<p>(3) Linux &#8211;&gt; test.py (payload and listener)&nbsp;</p>
+
+
+
+<p>(4) MacOS &#8211;&gt; test.jar (payload and listener)</p>
+
+
+
+<p>(5) Web &#8211;&gt; test.php (payload and listener)</p>
+
+
+
+<p>(6) Scan if a target is vulnerable to ms17_010</p>
+
+
+
+<p>(7) Exploit Windows 7/2008 x64 ONLY by IP (ms17_010_eternalblue)</p>
+
+
+
+<p>(7rd) Enable Remote Desktop (ms17_010_eternalblue)</p>
+
+
+
+<p>(8) Exploit Windows Vista/XP/2000/2003 ONLY by IP (ms17_010_psexec)&nbsp;</p>
+
+
+
+<p>(8rd) Enable Remote Desktop (ms17_010_psexec)</p>
+
+
+
+<p>(9) Exploit Windows with a link (HTA Server)</p>
+
+
+
+<p>(10) Contact with us &#8211; Our accounts</p>
+
+
+
+<p>tool made by = KALI LINUX TRICKS</p>
+
+
+
+<p>credits = https://github.com/cyberkallan/easysploit</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is ReactJS &#8211; full stack web development</title>
+		<link>/yash/what-is-reactjs-full-stack-web-development/</link>
+					<comments>/yash/what-is-reactjs-full-stack-web-development/#respond</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Thu, 15 Sep 2022 09:07:07 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<guid isPermaLink="false">/?p=1687</guid>
+
+					<description><![CDATA[So what is React or React.js as it&#8217;s actually called? And why would we use it? Well, to answer that first question, what it is, we can of course visit reactjs.org, the official React.js webpage. And there we learn that React is a JavaScript library for building user interfaces. That&#8217;s a nice sentence. But what exactly does that mean? Consider an example like Netflix Service, Netflix website and application. This application is highly interactive and runs pretty smoothly when we work with it. It&#8217;s easy to use and we don&#8217;t have to wait for anything to load, we have nice…]]></description>
+										<content:encoded><![CDATA[
+<p>So what is React or<a href="https://reactjs.org/"> React.js</a> as it&#8217;s actually called? And why would we use it? Well, to answer that first question, what it is, we can of course visit reactjs.org, the official React.js webpage. And there we learn that React is a JavaScript library for building user interfaces. That&#8217;s a nice sentence. But what exactly does that mean? Consider an example like Netflix Service, Netflix website and application. This application is highly interactive and runs pretty smoothly when we work with it. It&#8217;s easy to use and we don&#8217;t have to wait for anything to load, we have nice transitions. If we go to the My List page that transition happens pretty much instantly. We don&#8217;t seem to wait for a new page to load here, and that&#8217;s all pretty nice. And here I&#8217;m using Netflix in my browser. So this is a website here. Now, when we use a service like Netflix, it might almost feel a bit like a mobile app, even though I am using the website here. Because mobile apps give us this great highly reactive user experience. From mobile apps where use that we have smooth transition that it&#8217;s fun to use that app and that things happen instantly.</p>
+
+
+
+<p>And at least traditionally, websites didn&#8217;t always feel like this. Traditionally in websites, when we, for example, clicked a link or a button, our request was sent to a server and a new HTML page was sent back to the browser</p>
+
+
+
+<p>where it then could be displayed. And therefore, traditionally, websites could feel a bit clunky, we might have that latency where we wait for this new HTML page to load and so on. And it&#8217;s this request and response cycle, which we can break up with JavaScript. So at this point we don&#8217;t even need React, it&#8217;s just a JavaScript which can help us here. Because JavaScript is a programming language that allows us as a developer to run logic in the browser. And the great thing about that logic in the browser is that it can do things that manipulate what the user sees. JavaScript in the browser is able to manipulate to so-called Dom, the HTML elements that are rendered onto the screen. We can manipulate this with JavaScript. And that allows us to change what the users sees without fetching a new HTML page. We don&#8217;t need to request a new HTML page just to present something different to the user.</p>
+
+
+
+<p>So that&#8217;s why JavaScript can help us. And since React is a JavaScript library, it looks like it can also help us with that. It might be an extra building block, and indeed, React.js is a client-side JavaScript library.</p>
+
+
+
+<p>It helps us with writing that client-side JavaScript code and it&#8217;s all about building modern reactive user interfaces for websites. And in this course, you&#8217;re going to learn about all the different features and tools React.js ha and gives you that make building complex user interfaces easy. But one question remains, why do we need React? Because at this point we know that JavaScript is helpful, and I hope I could explain why it is. But how can React specifically help us, why might we want React in addition to JavaScript? For this, I built a simple, a very simple demo here. A simple website which has some interactivity, as you will see in the next lecture. And in the next lecture, I will show you how we can build this website and the interactivity it has with just JavaScript, and how to code what&#8217;s then look like with React in addition to JavaScript. And that will then make it clearwhy using React could be a good idea.</p>
+
+
+
+<p>for more information about</p>
+
+
+
+<p>full stack web development</p>
+
+
+
+<p><a href="https://reactjs.org/">https://reactjs.org/</a></p>
+
+
+
+<p>learn python and C++ through cheetsheets</p>
+
+
+
+<p><a href="/category/cheatsheets/">/category/cheatsheets/</a></p>
+
+
+
+<p><a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/yash/what-is-reactjs-full-stack-web-development/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTML Basics &#124;How to learn HTML</title>
+		<link>/ajinkgupta/html-basics-how-to-learn-html/</link>
+					<comments>/ajinkgupta/html-basics-how-to-learn-html/#respond</comments>
+		
+		<dc:creator><![CDATA[Ajink Gupta]]></dc:creator>
+		<pubDate>Sun, 28 Aug 2022 04:58:13 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=89</guid>
+
+					<description><![CDATA[In this article, we will see the&#160;HTML Basics&#160;by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML. Basic HTML Document: &#160;Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc. Every HTML document begins with a HTML document tag. Although this is not mandatory, it is a…]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, we will see the&nbsp;<strong>HTML Basics</strong>&nbsp;by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML.</p>
+
+
+
+<h2><strong>Basic HTML Document:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc.</p>
+
+
+
+<ul><li>Every HTML document begins with a HTML document tag. Although this is not mandatory, it is a good convention to start the document with this below-mentioned tag. Please refer to the&nbsp;HTML Doctypes&nbsp;article for more information related to Doctypes.</li></ul>
+
+
+
+<pre class="wp-block-preformatted">&lt;!DOCTYPE html&gt;</pre>
+
+
+
+<ul><li><strong>&lt;html&gt;</strong>&nbsp;: Every HTML code must be enclosed between basic HTML tags. It begins with&nbsp;<strong>&lt;html&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/html&gt;</strong>&nbsp;tag.</li><li><strong>&lt;head&gt;</strong>: The head tag comes next which contains all the header information of the web page or documents like the title of the page and other miscellaneous information. This information is enclosed within the head tag which opens with&nbsp;<strong>&lt;head&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/head&gt;</strong>. The contents will of this tag will be explained in the later sections of the course.</li><li><strong>&lt;title&gt;:&nbsp;</strong>We can mention the title of a web page using the&nbsp;<strong>&lt;title&gt;</strong>&nbsp;tag. This is header information and hence is mentioned within the header tags. The tag begins with&nbsp;<strong>&lt;title&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/title&gt;.</strong></li><li><strong>&lt;body&gt;:&nbsp;</strong>Next step is the most important of all the tags we have learned so far. The body tag contains the actual body of the page which will be visible to all the users. This opens with&nbsp;<strong>&lt;body&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/body&gt;</strong>. All content enclosed within this tag will be shown on the web page be it writings or images or audio or videos or even links. We will see later in the section how using various tags we may insert mentioned contents into our web pages.</li></ul>
+
+
+
+<p>The whole pattern of the code will look something like the below code example.</p>
+
+
+
+<p><strong>Example:&nbsp;</strong>This example illustrates the&nbsp;<strong>HTML basic</strong>&nbsp;structure.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&nbsp;&nbsp;&lt;!--This is the comment tag--&gt;
+<br>
+&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+<br>
+&lt;/head&gt;
+<br>
+&nbsp;
+<br>
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--Contents of the webpage--&gt;
+
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</pre>
+
+
+
+<p>This code won’t display anything. It just shows the basic pattern of how to write the HTML code and will name the title of the page as&nbsp;<em>Code Like Pro&nbsp;</em>. &lt;! – – comment here – – &gt; is the comment tag in HTML and it doesn’t read the line present inside this tag.</p>
+
+
+
+<h2><strong>HTML Headings:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>These tags help us to give headings to the content of a webpage. These tags are mainly written inside the body tag. HTML provides us with six heading tags from&nbsp;<strong>&lt;h1&gt;</strong>&nbsp;to&nbsp;<strong>&lt;h6&gt;</strong>. Every tag displays the heading in a different style and font size. &nbsp;</p>
+
+
+
+<p>Most HTML heading tag that we use :-&nbsp;</p>
+
+
+
+<ul><li>Heading 1&nbsp;</li><li>Heading 2</li><li>Heading 3&nbsp;</li></ul>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of 6 heading tags from&nbsp;<strong>&lt;h1&gt;</strong>&nbsp;to&nbsp;<strong>&lt;h6&gt;&nbsp;</strong>in HTML.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+<br>
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Hello Code Like Pro&lt;/h2&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Hello Code Like Pro&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Hello Code Like Pro&lt;/h4&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Hello Code Like Pro&lt;/h5&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;Hello Code Like Pro&lt;/h6&gt;
+
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4mKGlho874qPqSAe6EBXb-BAIlIUjrvpTpk0lUnYgQkIV1aX7MQ5NyDA0BubMmEMHpj_9FQhL5armQ9GfVtlc41H-NEBR6nbod_a5G3ezU5XZoLZJEi_wfbB-_cZCcg0URPdr9TP1xm7-GisBzBZXyC9bKBJIv8iPvD6rMnERQj1oLM0YSxRUAf2R/s718/image%20(15).png" alt=""/></figure>
+
+
+
+<p>HTML Headings</p>
+
+
+
+<h2><strong>HTML Paragraph:&nbsp;</strong></h2>
+
+
+
+<p>These tags help us to write paragraph statements on a webpage. They start with the&nbsp;<strong>&lt;p&gt;</strong>&nbsp;tag and ends with&nbsp;<strong>&lt;/p&gt;</strong>. &nbsp;</p>
+
+
+
+<p><strong>HTML Break:</strong>&nbsp;– These tags are used for inserting a single line type break. It does not have any closing tag. In HTML the break tag is written as&nbsp;<strong>&lt;br&gt;.</strong>&nbsp;</p>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of the &lt;p&gt; tag for writing a paragraph statement in HTML.</p>
+
+
+
+<h2>HTML</h2>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+
+&lt;head&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+
+
+<br>
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6MILweZlmGF8EBuCrYnLhla-ESijlzwjzdjuR5wvPaJl7r86zQD6i6knBYFgEqtxdw6WYb8ewn9OEYNfYYjsiV9OTcD1LIKAa9zlCBcOixb_J7NdpLZtF8LoreaLJnMJ3c-dwiAimdC7m-h79nC6_u8qUf351dnhy0hqm1zGESKU_y4rGG_cpL2nO/s620/image%20(16).png" alt=""/></figure>
+
+
+
+<p>HTML Paragraph</p>
+
+
+
+<h2><strong>HTML Horizontal Line:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>The&nbsp;&lt;hr&gt; tag&nbsp;is used to break the page into various parts, creating horizontal margins with help of a horizontal line running from the left to right-hand side of the page. This is also an empty tag and doesn’t take any additional statements.</p>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of the &lt;hr&gt; tag for the horizontal line in HTML.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+
+&lt;head&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+<br>
+&lt;hr/&gt;
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+<br>
+&lt;hr/&gt;
+<br>
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFR7mWprvr51qgH05TI1ys-qxnPET21JaL8hRfpPujM4lnOBo5xh_2fOf5nR4Wd7YGfxHBeOZ7l15O05mFeRFeAqPU-8Shaq_efhTGVfiZMjX-EMxACroFtWw4IAOt9Ye3EIvJ3_BdU9rJtwc8c2ruMT0aoqj7Jct1xkKJkU7YU2GXkyNO_q6ZiW-5/s688/image%20(17).png" alt=""/></figure>
+
+
+
+<p>Adding horizontal line using the &lt;hr&gt; tag</p>
+
+
+
+<h2><strong>HTML Images:&nbsp;</strong></h2>
+
+
+
+<p>The image tag is used to insert an image into our web page. The source of the image to be inserted is put inside the&nbsp;<strong>&lt;img src=”</strong><em><strong>source_of_image</strong></em><strong>“&gt;</strong>&nbsp;tag.</p>
+
+
+
+<p>Image can be inserted in the image tag in two formats: –&nbsp;</p>
+
+
+
+<ul><li>If the image is in the same folder, then we can just write the name of the image and the format as the path.&nbsp;</li><li>If the image is in another folder, then we do need to mention the path of the image and the image name as well as the format of the image.&nbsp;</li></ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ajinkgupta/html-basics-how-to-learn-html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

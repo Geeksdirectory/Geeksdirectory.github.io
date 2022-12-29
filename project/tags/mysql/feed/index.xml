@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mysql &#8211; GeeksDirectory</title>
+	<atom:link href="/project/tags/mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Fri, 16 Sep 2022 19:08:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>mysql &#8211; GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Tailblog</title>
+		<link>/project/tailblog/</link>
+					<comments>/project/tailblog/#reviews</comments>
+		
+		<dc:creator><![CDATA[Ajink Gupta]]></dc:creator>
+		<pubDate>Fri, 16 Sep 2022 18:43:44 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1707</guid>
+
+					<description><![CDATA[TailBlog Tailblog is an open source Blogging Platform written in PHP. You do not need to use a VPS to run Tailblog , shared hosting or even free hosting should work as long as the host supports at least PHP 5.3. Features Admin Panel (upcoming) WYSIWYG editor Categorization with category Static Pages (e.g. Contact Page, About Page) Meta canonical, description, and rich snippets for SEO (upcoming) Multi author support Disqus Comments (optional) Facebook Comments (optional) Google Analytics Modern Responsive Design User Roles Post Draft]]></description>
+										<content:encoded><![CDATA[<p>TailBlog<br />
+Tailblog is an open source Blogging Platform written in PHP.<br />
+You do not need to use a VPS to run Tailblog , shared hosting or even free hosting should work as long as the host supports at least PHP 5.3.</p>
+<p>Features<br />
+Admin Panel (upcoming)<br />
+WYSIWYG editor<br />
+Categorization with category<br />
+Static Pages (e.g. Contact Page, About Page)<br />
+Meta canonical, description, and rich snippets for SEO (upcoming)<br />
+Multi author support<br />
+Disqus Comments (optional)<br />
+Facebook Comments (optional)<br />
+Google Analytics<br />
+Modern Responsive Design<br />
+User Roles<br />
+Post Draft</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/tailblog/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

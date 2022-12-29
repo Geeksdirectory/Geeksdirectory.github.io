@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Projects &#8211; GeeksDirectory</title>
+	<atom:link href="/project/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Sat, 17 Sep 2022 19:36:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>Projects &#8211; GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Rock,paper_and_scissor using java</title>
+		<link>/project/rockpaper_and_scissor-using-java/</link>
+					<comments>/project/rockpaper_and_scissor-using-java/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 19:36:31 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1718</guid>
+
+					<description><![CDATA[Rock,paper_and_scissor using java]]></description>
+										<content:encoded><![CDATA[<p>Rock,paper_and_scissor using java</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/rockpaper_and_scissor-using-java/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>number puzzle game using java</title>
+		<link>/project/number-puzzle-game-using-java/</link>
+					<comments>/project/number-puzzle-game-using-java/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 19:36:29 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1716</guid>
+
+					<description><![CDATA[number puzzle game using java]]></description>
+										<content:encoded><![CDATA[<p>number puzzle game using java</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/number-puzzle-game-using-java/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>tetris game using java</title>
+		<link>/project/tetris-game-using-java/</link>
+					<comments>/project/tetris-game-using-java/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 19:36:27 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1714</guid>
+
+					<description><![CDATA[tetris game using java]]></description>
+										<content:encoded><![CDATA[<p>tetris game using java</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/tetris-game-using-java/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>cab booking system using java</title>
+		<link>/project/cab-booking-system-using-java/</link>
+					<comments>/project/cab-booking-system-using-java/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 19:36:25 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1712</guid>
+
+					<description><![CDATA[cab booking system using java and mysql]]></description>
+										<content:encoded><![CDATA[<p>cab booking system using java and mysql</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/cab-booking-system-using-java/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>payroll-system java</title>
+		<link>/project/payroll-system-java/</link>
+					<comments>/project/payroll-system-java/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Sat, 17 Sep 2022 19:36:22 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1706</guid>
+
+					<description><![CDATA[payroll-system using java &#38; mysql]]></description>
+										<content:encoded><![CDATA[<p>payroll-system using java &amp; mysql</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/payroll-system-java/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tailblog</title>
+		<link>/project/tailblog/</link>
+					<comments>/project/tailblog/#reviews</comments>
+		
+		<dc:creator><![CDATA[Ajink Gupta]]></dc:creator>
+		<pubDate>Fri, 16 Sep 2022 18:43:44 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1707</guid>
+
+					<description><![CDATA[TailBlog Tailblog is an open source Blogging Platform written in PHP. You do not need to use a VPS to run Tailblog , shared hosting or even free hosting should work as long as the host supports at least PHP 5.3. Features Admin Panel (upcoming) WYSIWYG editor Categorization with category Static Pages (e.g. Contact Page, About Page) Meta canonical, description, and rich snippets for SEO (upcoming) Multi author support Disqus Comments (optional) Facebook Comments (optional) Google Analytics Modern Responsive Design User Roles Post Draft]]></description>
+										<content:encoded><![CDATA[<p>TailBlog<br />
+Tailblog is an open source Blogging Platform written in PHP.<br />
+You do not need to use a VPS to run Tailblog , shared hosting or even free hosting should work as long as the host supports at least PHP 5.3.</p>
+<p>Features<br />
+Admin Panel (upcoming)<br />
+WYSIWYG editor<br />
+Categorization with category<br />
+Static Pages (e.g. Contact Page, About Page)<br />
+Meta canonical, description, and rich snippets for SEO (upcoming)<br />
+Multi author support<br />
+Disqus Comments (optional)<br />
+Facebook Comments (optional)<br />
+Google Analytics<br />
+Modern Responsive Design<br />
+User Roles<br />
+Post Draft</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/tailblog/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Docs theme with Tailwind</title>
+		<link>/project/docs-theme-tailwind-with-html/</link>
+					<comments>/project/docs-theme-tailwind-with-html/#reviews</comments>
+		
+		<dc:creator><![CDATA[Ajink Gupta]]></dc:creator>
+		<pubDate>Thu, 15 Sep 2022 09:59:48 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1694</guid>
+
+					<description><![CDATA[Docs theme with Tailwind css]]></description>
+										<content:encoded><![CDATA[<p>Docs theme with Tailwind css</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/docs-theme-tailwind-with-html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Random image generator</title>
+		<link>/project/random-image-generator/</link>
+					<comments>/project/random-image-generator/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Wed, 14 Sep 2022 17:05:45 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1676</guid>
+
+					<description><![CDATA[Random image generator using (thecatapi)api]]></description>
+										<content:encoded><![CDATA[<p>Random image generator using (<span style="background-color: #0a0c10; color: #addcff; font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 12px; white-space: pre;">thecatapi)</span>api</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/random-image-generator/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>contact-form-php</title>
+		<link>/project/contact-form-php/</link>
+					<comments>/project/contact-form-php/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Wed, 14 Sep 2022 17:05:37 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1680</guid>
+
+					<description><![CDATA[simple contact us form made with php]]></description>
+										<content:encoded><![CDATA[<p>simple contact us form made with php</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/contact-form-php/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>tic-tac-toe</title>
+		<link>/project/tic-tac-toe/</link>
+					<comments>/project/tic-tac-toe/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Wed, 14 Sep 2022 17:05:33 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1682</guid>
+
+					<description><![CDATA[basic tic tac toe game with html css and javascript]]></description>
+										<content:encoded><![CDATA[<p><span style="color: #f0f3f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; background-color: #0a0c10;">basic tic tac toe game with html css and javascript</span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/tic-tac-toe/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

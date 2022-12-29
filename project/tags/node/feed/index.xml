@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>node &#8211; GeeksDirectory</title>
+	<atom:link href="/project/tags/node/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Tue, 13 Sep 2022 16:37:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>node &#8211; GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>modern-blog app</title>
+		<link>/project/modern-blog-app/</link>
+					<comments>/project/modern-blog-app/#reviews</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Tue, 13 Sep 2022 16:37:22 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=gd_place&#038;p=1635</guid>
+
+					<description><![CDATA[modern-blog-app Overview Modern-blog app features recent posts, categories. full markdown articles, author information, comments, and much more, this app is made with NextJs, Tailwind css, GraphQl and GraphCMS while developing this app I learned how to work with GraphCMS. (GraphCMS is a headless content management system based on GraphQL technology enabling seamless integration with any application.) Designed this app eith tailwind css,and deployed it on vercel. In this app I also have also wrote some post related to cyber security for testing purposes]]></description>
+										<content:encoded><![CDATA[<div class="Typewriter" style="box-sizing: border-box; margin: 0px; padding: 0px;" data-testid="typewriter-wrapper"><span class="Typewriter__wrapper" style="box-sizing: border-box; margin: 0px; padding: 0px;">modern-blog-app</span></div>
+<div class="popupTerminalWindowImageContainer" style="box-sizing: border-box; margin: 0px; padding: 0px; font-family: -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Courier New', sans-serif; display: grid; grid-area: image / image / image / image; max-height: 40vh; place-items: center; place-self: center; position: relative; color: #cccccc; font-size: 18px; background-color: rgba(41, 52, 50, 0.584);"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none;" href="https://modernblog-app.vercel.app/" target="_blank" rel="noopener noreferrer"><img decoding="async" class="popupTerminaWindowImage" style="box-sizing: border-box; margin: auto; padding: 0px; border-radius: var(--radius); max-height: 40vh; max-width: 95%; width: auto; object-fit: contain !important;" src="https://yashbhangale.me/modern-blog.png" alt="App screenshot" /></a></div>
+<div class="popupTerminalWindowLinkIcons" style="box-sizing: border-box; margin: 0px; padding: 0.8rem 0px; font-family: -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Courier New', sans-serif; align-items: center; display: flex; gap: 1rem; grid-area: linkIcons / linkIcons / linkIcons / linkIcons; justify-content: center; position: relative; color: #cccccc; font-size: 18px; background-color: rgba(41, 52, 50, 0.584);"></div>
+<div class="popupTerminaWindowTextContainer" style="box-sizing: border-box; margin: 0px; padding: 0px; font-family: -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Courier New', sans-serif; grid-area: text / text / text / text; position: relative; color: #cccccc; font-size: 18px; background-color: rgba(41, 52, 50, 0.584);">
+<div class="popupTerminaWindowText" style="box-sizing: border-box; margin: 0px; padding: 0px;">
+<h3 style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px;">Overview</h3>
+<p style="box-sizing: border-box; margin: 20px 0px; padding: 0px;">Modern-blog app features recent posts, categories. full markdown articles, author information, comments, and much more, this app is made with NextJs, Tailwind css, GraphQl and GraphCMS while developing this app I learned how to work with GraphCMS. (GraphCMS is a headless content management system based on GraphQL technology enabling seamless integration with any application.) Designed this app eith tailwind css,and deployed it on vercel. In this app I also have also wrote some post related to cyber security for testing purposes</p>
+</div>
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/project/modern-blog-app/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

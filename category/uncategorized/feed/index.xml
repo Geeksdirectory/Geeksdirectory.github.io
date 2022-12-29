@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; GeeksDirectory</title>
+	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Sun, 28 Aug 2022 08:36:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>Uncategorized &#8211; GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>HTML Basics &#124;How to learn HTML</title>
+		<link>/ajinkgupta/html-basics-how-to-learn-html/</link>
+					<comments>/ajinkgupta/html-basics-how-to-learn-html/#respond</comments>
+		
+		<dc:creator><![CDATA[Ajink Gupta]]></dc:creator>
+		<pubDate>Sun, 28 Aug 2022 04:58:13 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=89</guid>
+
+					<description><![CDATA[In this article, we will see the&#160;HTML Basics&#160;by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML. Basic HTML Document: &#160;Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc. Every HTML document begins with a HTML document tag. Although this is not mandatory, it is a…]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, we will see the&nbsp;<strong>HTML Basics</strong>&nbsp;by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML.</p>
+
+
+
+<h2><strong>Basic HTML Document:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc.</p>
+
+
+
+<ul><li>Every HTML document begins with a HTML document tag. Although this is not mandatory, it is a good convention to start the document with this below-mentioned tag. Please refer to the&nbsp;HTML Doctypes&nbsp;article for more information related to Doctypes.</li></ul>
+
+
+
+<pre class="wp-block-preformatted">&lt;!DOCTYPE html&gt;</pre>
+
+
+
+<ul><li><strong>&lt;html&gt;</strong>&nbsp;: Every HTML code must be enclosed between basic HTML tags. It begins with&nbsp;<strong>&lt;html&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/html&gt;</strong>&nbsp;tag.</li><li><strong>&lt;head&gt;</strong>: The head tag comes next which contains all the header information of the web page or documents like the title of the page and other miscellaneous information. This information is enclosed within the head tag which opens with&nbsp;<strong>&lt;head&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/head&gt;</strong>. The contents will of this tag will be explained in the later sections of the course.</li><li><strong>&lt;title&gt;:&nbsp;</strong>We can mention the title of a web page using the&nbsp;<strong>&lt;title&gt;</strong>&nbsp;tag. This is header information and hence is mentioned within the header tags. The tag begins with&nbsp;<strong>&lt;title&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/title&gt;.</strong></li><li><strong>&lt;body&gt;:&nbsp;</strong>Next step is the most important of all the tags we have learned so far. The body tag contains the actual body of the page which will be visible to all the users. This opens with&nbsp;<strong>&lt;body&gt;</strong>&nbsp;and ends with&nbsp;<strong>&lt;/body&gt;</strong>. All content enclosed within this tag will be shown on the web page be it writings or images or audio or videos or even links. We will see later in the section how using various tags we may insert mentioned contents into our web pages.</li></ul>
+
+
+
+<p>The whole pattern of the code will look something like the below code example.</p>
+
+
+
+<p><strong>Example:&nbsp;</strong>This example illustrates the&nbsp;<strong>HTML basic</strong>&nbsp;structure.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&nbsp;&nbsp;&lt;!--This is the comment tag--&gt;
+<br>
+&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+<br>
+&lt;/head&gt;
+<br>
+&nbsp;
+<br>
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--Contents of the webpage--&gt;
+
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</pre>
+
+
+
+<p>This code won’t display anything. It just shows the basic pattern of how to write the HTML code and will name the title of the page as&nbsp;<em>Code Like Pro&nbsp;</em>. &lt;! – – comment here – – &gt; is the comment tag in HTML and it doesn’t read the line present inside this tag.</p>
+
+
+
+<h2><strong>HTML Headings:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>These tags help us to give headings to the content of a webpage. These tags are mainly written inside the body tag. HTML provides us with six heading tags from&nbsp;<strong>&lt;h1&gt;</strong>&nbsp;to&nbsp;<strong>&lt;h6&gt;</strong>. Every tag displays the heading in a different style and font size. &nbsp;</p>
+
+
+
+<p>Most HTML heading tag that we use :-&nbsp;</p>
+
+
+
+<ul><li>Heading 1&nbsp;</li><li>Heading 2</li><li>Heading 3&nbsp;</li></ul>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of 6 heading tags from&nbsp;<strong>&lt;h1&gt;</strong>&nbsp;to&nbsp;<strong>&lt;h6&gt;&nbsp;</strong>in HTML.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+<br>
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Hello Code Like Pro&lt;/h2&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Hello Code Like Pro&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Hello Code Like Pro&lt;/h4&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Hello Code Like Pro&lt;/h5&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;Hello Code Like Pro&lt;/h6&gt;
+
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4mKGlho874qPqSAe6EBXb-BAIlIUjrvpTpk0lUnYgQkIV1aX7MQ5NyDA0BubMmEMHpj_9FQhL5armQ9GfVtlc41H-NEBR6nbod_a5G3ezU5XZoLZJEi_wfbB-_cZCcg0URPdr9TP1xm7-GisBzBZXyC9bKBJIv8iPvD6rMnERQj1oLM0YSxRUAf2R/s718/image%20(15).png" alt=""/></figure>
+
+
+
+<p>HTML Headings</p>
+
+
+
+<h2><strong>HTML Paragraph:&nbsp;</strong></h2>
+
+
+
+<p>These tags help us to write paragraph statements on a webpage. They start with the&nbsp;<strong>&lt;p&gt;</strong>&nbsp;tag and ends with&nbsp;<strong>&lt;/p&gt;</strong>. &nbsp;</p>
+
+
+
+<p><strong>HTML Break:</strong>&nbsp;– These tags are used for inserting a single line type break. It does not have any closing tag. In HTML the break tag is written as&nbsp;<strong>&lt;br&gt;.</strong>&nbsp;</p>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of the &lt;p&gt; tag for writing a paragraph statement in HTML.</p>
+
+
+
+<h2>HTML</h2>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+
+&lt;head&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+
+
+<br>
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6MILweZlmGF8EBuCrYnLhla-ESijlzwjzdjuR5wvPaJl7r86zQD6i6knBYFgEqtxdw6WYb8ewn9OEYNfYYjsiV9OTcD1LIKAa9zlCBcOixb_J7NdpLZtF8LoreaLJnMJ3c-dwiAimdC7m-h79nC6_u8qUf351dnhy0hqm1zGESKU_y4rGG_cpL2nO/s620/image%20(16).png" alt=""/></figure>
+
+
+
+<p>HTML Paragraph</p>
+
+
+
+<h2><strong>HTML Horizontal Line:</strong></h2>
+
+
+
+<p><strong>&nbsp;</strong>The&nbsp;&lt;hr&gt; tag&nbsp;is used to break the page into various parts, creating horizontal margins with help of a horizontal line running from the left to right-hand side of the page. This is also an empty tag and doesn’t take any additional statements.</p>
+
+
+
+<p><strong>Example</strong>: This example illustrates the use of the &lt;hr&gt; tag for the horizontal line in HTML.</p>
+
+
+
+<p>HTML</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;html&gt;
+
+&lt;head&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Code Like Pro&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello Code Like Pro&lt;/h1&gt;
+
+
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+<br>
+&lt;hr/&gt;
+<br>
+&lt;p&gt; Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+<br>
+&nbsp; &nbsp;Coding Examples with great tutorials for every geek&lt;br&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+<br>
+&lt;hr/&gt;
+<br>
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+
+
+<p><strong>Output</strong>:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFR7mWprvr51qgH05TI1ys-qxnPET21JaL8hRfpPujM4lnOBo5xh_2fOf5nR4Wd7YGfxHBeOZ7l15O05mFeRFeAqPU-8Shaq_efhTGVfiZMjX-EMxACroFtWw4IAOt9Ye3EIvJ3_BdU9rJtwc8c2ruMT0aoqj7Jct1xkKJkU7YU2GXkyNO_q6ZiW-5/s688/image%20(17).png" alt=""/></figure>
+
+
+
+<p>Adding horizontal line using the &lt;hr&gt; tag</p>
+
+
+
+<h2><strong>HTML Images:&nbsp;</strong></h2>
+
+
+
+<p>The image tag is used to insert an image into our web page. The source of the image to be inserted is put inside the&nbsp;<strong>&lt;img src=”</strong><em><strong>source_of_image</strong></em><strong>“&gt;</strong>&nbsp;tag.</p>
+
+
+
+<p>Image can be inserted in the image tag in two formats: –&nbsp;</p>
+
+
+
+<ul><li>If the image is in the same folder, then we can just write the name of the image and the format as the path.&nbsp;</li><li>If the image is in another folder, then we do need to mention the path of the image and the image name as well as the format of the image.&nbsp;</li></ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ajinkgupta/html-basics-how-to-learn-html/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

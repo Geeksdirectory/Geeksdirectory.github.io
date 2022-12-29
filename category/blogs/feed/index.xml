@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Blogs &#8211; GeeksDirectory</title>
+	<atom:link href="/category/blogs/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Directory for Enthusiast</description>
+	<lastBuildDate>Mon, 19 Sep 2022 15:08:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2022/08/geeksdirectory-pro-48x48.png</url>
+	<title>Blogs &#8211; GeeksDirectory</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Cohen Sutherland Line Clipping Computer Graphics program</title>
+		<link>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/</link>
+					<comments>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/#respond</comments>
+		
+		<dc:creator><![CDATA[AI_11_Ajink. Gupta]]></dc:creator>
+		<pubDate>Mon, 19 Sep 2022 04:58:04 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<category><![CDATA[computer Graphics]]></category>
+		<guid isPermaLink="false">/?p=1721</guid>
+
+					<description><![CDATA[Cohen Sutherland Line Clipping Computer Graphics program     #include&#60;stdio.h&#62;     #include&#60;conio.h&#62;     #include&#60;stdlib.h&#62;     #include&#60;dos.h&#62;     #include&#60;math.h&#62;     #include&#60;graphics.h&#62;     /* Defining structure for end point of line */     typedef struct coordinate     {     int x,y;     char code[4];     }PT;     void drawwindow();     void drawline (PT p1,PT p2,int cl);     PT setcode(PT p);     int visibility (PT p1,PT p2);     PT resetendpt (PT p1,PT p2);     main()     {     int gd=DETECT, gm,v;     PT p1,p2,ptemp;     initgraph(&#38;gd,&#38;gm,&#8221;\tc\bgi&#8221;);     cleardevice();     printf(&#8220;nnttENTER END-POINT 1 (x,y): &#8220;);     scanf(&#8220;%d,%d&#8221;,&#38;p1.x,&#38;p1.y);     printf(&#8220;nnttENTER END-POINT 2 (x,y): &#8220;);     scanf(&#8220;%d,%d&#8221;,&#38;p2.x,&#38;p2.y);…]]></description>
+										<content:encoded><![CDATA[<p><strong> Cohen Sutherland Line Clipping Computer Graphics program</strong></p>
+<blockquote>
+<p>    #include&lt;stdio.h&gt;</p>
+<p>    #include&lt;conio.h&gt;</p>
+<p>    #include&lt;stdlib.h&gt;</p>
+<p>    #include&lt;dos.h&gt;</p>
+<p>    #include&lt;math.h&gt;</p>
+<p>    #include&lt;graphics.h&gt;</p>
+<p>    /* Defining structure for end point of line */</p>
+<p>    typedef struct coordinate</p>
+<p>    {</p>
+<p>    int x,y;</p>
+<p>    char code[4];</p>
+<p>    }PT;</p>
+<p>    void drawwindow();</p>
+<p>    void drawline (PT p1,PT p2,int cl);</p>
+<p>    PT setcode(PT p);</p>
+<p>    int visibility (PT p1,PT p2);</p>
+<p>    PT resetendpt (PT p1,PT p2);</p>
+<p>    main()</p>
+<p>    {</p>
+<p>    int gd=DETECT, gm,v;</p>
+<p>    PT p1,p2,ptemp;</p>
+<p>    initgraph(&amp;gd,&amp;gm,&#8221;\tc\bgi&#8221;);</p>
+<p>    cleardevice();</p>
+<p>    printf(&#8220;nnttENTER END-POINT 1 (x,y): &#8220;);</p>
+<p>    scanf(&#8220;%d,%d&#8221;,&amp;p1.x,&amp;p1.y);</p>
+<p>    printf(&#8220;nnttENTER END-POINT 2 (x,y): &#8220;);</p>
+<p>    scanf(&#8220;%d,%d&#8221;,&amp;p2.x,&amp;p2.y);</p>
+<p>    cleardevice();</p>
+<p>    drawwindow();</p>
+<p>    getch();</p>
+<p>    drawline(p1,p2,15);</p>
+<p>    getch();</p>
+<p>    p1=setcode(p1);</p>
+<p>    p2=setcode(p2);</p>
+<p>    v=visibility(p1,p2);</p>
+<p>    switch(v)</p>
+<p>        {</p>
+<p>        case 0:    cleardevice(); /* Line completely visible*/</p>
+<p>                drawwindow();</p>
+<p>                drawline(p1,p2,15);</p>
+<p>                break;</p>
+<p>        case 1:    cleardevice(); /* Line completely invisible */</p>
+<p>                drawwindow();</p>
+<p>                break;</p>
+<p>        case 2:    cleardevice();     /* line partly visible */</p>
+<p>                p1=resetendpt (p1,p2);</p>
+<p>                p2=resetendpt(p2,p1);</p>
+<p>                drawwindow();</p>
+<p>                drawline(p1,p2,15);</p>
+<p>                break;</p>
+<p>        }</p>
+<p>    getch();</p>
+<p>    closegraph();</p>
+<p>    return(0);</p>
+<p>    }</p>
+<p>    /* Function to draw window */</p>
+<p>    void drawwindow()</p>
+<p>    {</p>
+<p>    setcolor(RED);</p>
+<p>    line(150,100,450,100);</p>
+<p>    line(450,100,450,350);</p>
+<p>    line(450,350,150,350);</p>
+<p>    line(150,350,150,100);</p>
+<p>    }</p>
+<p>    /* Function to draw line between two points</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;*/</p>
+<p>    void drawline (PT p1,PT p2,int cl)</p>
+<p>    {</p>
+<p>    setcolor(cl);</p>
+<p>    line(p1.x,p1.y,p2.x,p2.y);</p>
+<p>    }</p>
+<p>    /* Function to set code of the co-ordinates</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    PT setcode(PT p)</p>
+<p>    {</p>
+<p>    PT ptemp;</p>
+<p>    if(p.y&lt;100)</p>
+<p>    ptemp.code[0]=&#8217;1&#8242;; /* TOP */</p>
+<p>    else</p>
+<p>    ptemp.code[0]=&#8217;0&#8242;;</p>
+<p>    if(p.y&gt;350)</p>
+<p>    ptemp.code[1]=&#8217;1&#8242;; /* BOTTOM */</p>
+<p>    else</p>
+<p>    ptemp.code[1]=&#8217;0&#8242;;</p>
+<p>    if (p.x&gt;450)</p>
+<p>    ptemp.code[2]=&#8217;1&#8242;; /* RIGHT */</p>
+<p>    else</p>
+<p>    ptemp.code[2]=&#8217;0&#8242;;</p>
+<p>    if (p.x&lt;150) /* LEFT */</p>
+<p>    ptemp.code[3]=&#8217;1&#8242;;</p>
+<p>    else</p>
+<p>Cohen Sutherland Line Clipping Computer Graphics program</p>
+<p> </p>
+<p>    ptemp.code[3]=&#8217;0&#8242;;</p>
+<p>    ptemp.x=p.x;</p>
+<p>    ptemp.y=p.y;</p>
+<p>    return(ptemp);</p>
+<p>    }</p>
+<p>    /* Function to determine visibility of line</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    int visibility (PT p1,PT p2)</p>
+<p>    {</p>
+<p>    int i,flag=0;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    {</p>
+<p>    if((p1.code[i]!=&#8217;0&#8242;)||(p2.code[i]!=&#8217;0&#8242;))</p>
+<p>    flag=1;</p>
+<p>    }</p>
+<p>    if(flag==0)</p>
+<p>    return(0);</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    {</p>
+<p>    if((p1.code[i]==p2.code[i]) &amp;&amp;(p1.code[i]==&#8217;1&#8242;))</p>
+<p>    flag=0;</p>
+<p>    }</p>
+<p>    if(flag==0)</p>
+<p>    return(1);</p>
+<p>    return(2);</p>
+<p>    }</p>
+<p>    /* Function to find new end points</p>
+<p>    &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;*/</p>
+<p>    PT resetendpt (PT p1,PT p2)</p>
+<p>    {</p>
+<p>    PT temp;</p>
+<p>    int x,y,i;</p>
+<p>    float m,k;</p>
+<p>    if( p1.code[3]==&#8217;1&#8242;) /* Cutting LEFT Edge  */</p>
+<p>    x=150;</p>
+<p>    if(p1.code[2]==&#8217;1&#8242;)  /* Cutting RIGHT Edge */</p>
+<p>    x=450;</p>
+<p>    if((p1.code[3]==&#8217;1&#8242;)||(p1.code[2]==&#8217;1&#8242;))</p>
+<p>    {</p>
+<p>    m=(float) (p2.y-p1.y)/(p2.x-p1.x);</p>
+<p>    k=(p1.y+(m*(x-p1.x)));</p>
+<p>    temp.y=k;</p>
+<p>    temp.x=x;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    temp.code[i]=p1.code[i];</p>
+<p>    if(temp.y&lt;=350&amp;&amp;temp.y&gt;=100)</p>
+<p>    return(temp);</p>
+<p>    }</p>
+<p>    if(p1.code[0]==&#8217;1&#8242;)  /* Cutting TOP Edge */</p>
+<p>    y=100;</p>
+<p>    if(p1.code [1]==&#8217;1&#8242;) /* Cutting BOTTOM Edge */</p>
+<p>    y=350;</p>
+<p>    if((p1.code[0]==&#8217;1&#8242;)||(p1.code[1]==&#8217;1&#8242;))</p>
+<p>    {</p>
+<p>    m=(float)(p2.y-p1.y)/(p2.x-p1.x);</p>
+<p>    k=(float)p1.x+(float)(y-p1.y)/m;</p>
+<p>    temp.x=k;</p>
+<p>    temp.y=y;</p>
+<p>    for(i=0;i&lt;4;i++)</p>
+<p>    temp.code[i]=p1.code[i];</p>
+<p>    return(temp);</p>
+<p>    }</p>
+<p>    else</p>
+<p>    return(p1);</p>
+<p>    }</p>
+</p>
+</blockquote>
+]]></content:encoded>
+					
+					<wfw:commentRss>/ajink-gupta/cohen-sutherland-line-clipping-computer-graphics-program/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EasySploit:- MetaSploit Automation Tool (automated payload creater)</title>
+		<link>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/</link>
+					<comments>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/#respond</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Thu, 15 Sep 2022 09:15:38 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<guid isPermaLink="false">/?p=1688</guid>
+
+					<description><![CDATA[EasySploit is a tool which allows the user to run MetaSploit (payload builder )in an automated environment. MetaSploit is a well known penetration platform which allows the user to write, test and execute exploit code. It contains a wide range of tools which the user can use to detect security vulnerabilities, enumerate networks, execute attacks and avoid detection.Disclaimer: For education purposes only! Usage of EasySploit for attacking targets without prior mutual consent is illegal. EasySploit: Fast &#38; Easy to UseMetaSploit Automation Tool EasySploit allows the user to exploit a wide range of platforms including Windows, Android, Linux, MacOS and web…]]></description>
+										<content:encoded><![CDATA[
+<p>EasySploit is a tool which allows the user to run <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>(payload builder )in an automated environment. <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>is a well known penetration platform which allows the user to write, test and execute exploit code. It contains a wide range of tools which the user can use to detect security vulnerabilities, enumerate networks, execute attacks and avoid detection.Disclaimer: For education purposes only! Usage of EasySploit for attacking targets without prior mutual consent is illegal.</p>
+
+
+
+<h2><strong>EasySploit: Fast &amp; Easy to UseMetaSploit Automation Tool</strong></h2>
+
+
+
+<p>EasySploit allows the user to exploit a wide range of platforms including Windows, Android, Linux, MacOS and web servers. EasySploit will first ask the user to enter the target’s IP address to check if the target is vulnerable to attacks through EasySploit. If the target is vulnerable, the user will receive the corresponding operating system and attack method. Once the target has been breached, meterpreter will automatically start allowing the user to select his desired action.</p>
+
+
+
+<h3><strong>Features:</strong></h3>
+
+
+
+<ul><li>Run <a href="https://www.cyberpunk.rs/the-most-popular-pentesting-framework-metasploit-framework">MetaSploit </a>through an automated tool</li><li>Attack systems using different operating systems</li><li>Download files from the target system</li><li>Monitor keystrokes of the target system</li></ul>
+
+
+
+<h3><strong>Supported Platforms:</strong></h3>
+
+
+
+<ul><li>Linux</li></ul>
+
+
+
+<h3><strong>Requirements:</strong></h3>
+
+
+
+<ul><li>Git</li></ul>
+
+
+
+<h2><strong>Install EasySploit</strong></h2>
+
+
+
+<p>Clone the GitHub repository:</p>
+
+
+
+<p>$ git clone https://github.com/KALILINUXTRICKSYT/easysploit.git</p>
+
+
+
+<p>Navigate to the working directory and install the requirements:</p>
+
+
+
+<p>$ cd easysploit</p>
+
+
+
+<p>$ bash installer.sh</p>
+
+
+
+<h2><strong>EasySploit Usage</strong></h2>
+
+
+
+<p>Enter the following commands:</p>
+
+
+
+<p>Enter the following commands:</p>
+
+
+
+<p>$ cd easysploit</p>
+
+
+
+<p>$ easysploit</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;______ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _____ &nbsp; &nbsp; &nbsp; __&nbsp; &nbsp; &nbsp; _ __&nbsp;</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;/ ____/___ ________&nbsp; __/ ___/____&nbsp; / /___&nbsp; (_) /_</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;/ __/ / __ `/ ___/ / / /\__ \/ __ \/ / __ \/ / __/</p>
+
+
+
+<p>&nbsp;&nbsp;/ /___/ /_/ (__&nbsp; ) /_/ /___/ / /_/ / / /_/ / / /_ &nbsp; v4.2</p>
+
+
+
+<p>&nbsp;/_____/\__,_/____/\__, //____/ .___/_/\____/_/\__/&nbsp; (Linux)</p>
+
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/____/ &nbsp; &nbsp; /_/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<p>Usage of EASYSPLOIT for attacking targets without prior mutual consent is</p>
+
+
+
+<p>ILLEGAL. Developers are not responsible for any damage caused by this script.</p>
+
+
+
+<p>EASYSPLOIT is intented ONLY FOR EDUCATIONAL PURPOSES!!! STAY LEGAL!!!</p>
+
+
+
+<p>(1) Windows &#8211;&gt; test.exe (payload and listener)&nbsp;</p>
+
+
+
+<p>(2) Android &#8211;&gt; test.apk (payload and listener)&nbsp;&nbsp;</p>
+
+
+
+<p>(3) Linux &#8211;&gt; test.py (payload and listener)&nbsp;</p>
+
+
+
+<p>(4) MacOS &#8211;&gt; test.jar (payload and listener)</p>
+
+
+
+<p>(5) Web &#8211;&gt; test.php (payload and listener)</p>
+
+
+
+<p>(6) Scan if a target is vulnerable to ms17_010</p>
+
+
+
+<p>(7) Exploit Windows 7/2008 x64 ONLY by IP (ms17_010_eternalblue)</p>
+
+
+
+<p>(7rd) Enable Remote Desktop (ms17_010_eternalblue)</p>
+
+
+
+<p>(8) Exploit Windows Vista/XP/2000/2003 ONLY by IP (ms17_010_psexec)&nbsp;</p>
+
+
+
+<p>(8rd) Enable Remote Desktop (ms17_010_psexec)</p>
+
+
+
+<p>(9) Exploit Windows with a link (HTA Server)</p>
+
+
+
+<p>(10) Contact with us &#8211; Our accounts</p>
+
+
+
+<p>tool made by = KALI LINUX TRICKS</p>
+
+
+
+<p>credits = https://github.com/cyberkallan/easysploit</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/yash/easysploit-metasploit-automation-tool-automated-payload-creater/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is ReactJS &#8211; full stack web development</title>
+		<link>/yash/what-is-reactjs-full-stack-web-development/</link>
+					<comments>/yash/what-is-reactjs-full-stack-web-development/#respond</comments>
+		
+		<dc:creator><![CDATA[Yash Bhangale]]></dc:creator>
+		<pubDate>Thu, 15 Sep 2022 09:07:07 +0000</pubDate>
+				<category><![CDATA[Blogs]]></category>
+		<guid isPermaLink="false">/?p=1687</guid>
+
+					<description><![CDATA[So what is React or React.js as it&#8217;s actually called? And why would we use it? Well, to answer that first question, what it is, we can of course visit reactjs.org, the official React.js webpage. And there we learn that React is a JavaScript library for building user interfaces. That&#8217;s a nice sentence. But what exactly does that mean? Consider an example like Netflix Service, Netflix website and application. This application is highly interactive and runs pretty smoothly when we work with it. It&#8217;s easy to use and we don&#8217;t have to wait for anything to load, we have nice…]]></description>
+										<content:encoded><![CDATA[
+<p>So what is React or<a href="https://reactjs.org/"> React.js</a> as it&#8217;s actually called? And why would we use it? Well, to answer that first question, what it is, we can of course visit reactjs.org, the official React.js webpage. And there we learn that React is a JavaScript library for building user interfaces. That&#8217;s a nice sentence. But what exactly does that mean? Consider an example like Netflix Service, Netflix website and application. This application is highly interactive and runs pretty smoothly when we work with it. It&#8217;s easy to use and we don&#8217;t have to wait for anything to load, we have nice transitions. If we go to the My List page that transition happens pretty much instantly. We don&#8217;t seem to wait for a new page to load here, and that&#8217;s all pretty nice. And here I&#8217;m using Netflix in my browser. So this is a website here. Now, when we use a service like Netflix, it might almost feel a bit like a mobile app, even though I am using the website here. Because mobile apps give us this great highly reactive user experience. From mobile apps where use that we have smooth transition that it&#8217;s fun to use that app and that things happen instantly.</p>
+
+
+
+<p>And at least traditionally, websites didn&#8217;t always feel like this. Traditionally in websites, when we, for example, clicked a link or a button, our request was sent to a server and a new HTML page was sent back to the browser</p>
+
+
+
+<p>where it then could be displayed. And therefore, traditionally, websites could feel a bit clunky, we might have that latency where we wait for this new HTML page to load and so on. And it&#8217;s this request and response cycle, which we can break up with JavaScript. So at this point we don&#8217;t even need React, it&#8217;s just a JavaScript which can help us here. Because JavaScript is a programming language that allows us as a developer to run logic in the browser. And the great thing about that logic in the browser is that it can do things that manipulate what the user sees. JavaScript in the browser is able to manipulate to so-called Dom, the HTML elements that are rendered onto the screen. We can manipulate this with JavaScript. And that allows us to change what the users sees without fetching a new HTML page. We don&#8217;t need to request a new HTML page just to present something different to the user.</p>
+
+
+
+<p>So that&#8217;s why JavaScript can help us. And since React is a JavaScript library, it looks like it can also help us with that. It might be an extra building block, and indeed, React.js is a client-side JavaScript library.</p>
+
+
+
+<p>It helps us with writing that client-side JavaScript code and it&#8217;s all about building modern reactive user interfaces for websites. And in this course, you&#8217;re going to learn about all the different features and tools React.js ha and gives you that make building complex user interfaces easy. But one question remains, why do we need React? Because at this point we know that JavaScript is helpful, and I hope I could explain why it is. But how can React specifically help us, why might we want React in addition to JavaScript? For this, I built a simple, a very simple demo here. A simple website which has some interactivity, as you will see in the next lecture. And in the next lecture, I will show you how we can build this website and the interactivity it has with just JavaScript, and how to code what&#8217;s then look like with React in addition to JavaScript. And that will then make it clearwhy using React could be a good idea.</p>
+
+
+
+<p>for more information about</p>
+
+
+
+<p>full stack web development</p>
+
+
+
+<p><a href="https://reactjs.org/">https://reactjs.org/</a></p>
+
+
+
+<p>learn python and C++ through cheetsheets</p>
+
+
+
+<p><a href="/category/cheatsheets/">/category/cheatsheets/</a></p>
+
+
+
+<p><a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/yash/what-is-reactjs-full-stack-web-development/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
